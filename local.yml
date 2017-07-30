@@ -20,6 +20,7 @@ services:
     command: /start-dev.sh
     depends_on:
       - postgres
+      - redis
     environment:
       - POSTGRES_USER=dct
       - USE_DOCKER=yes
@@ -27,18 +28,9 @@ services:
       - .:/app
     ports:
       - "8000:8000"
+  redis:
+    image: redis:3.0
 
-
-  pycharm:
-    build:
-      context: .
-      dockerfile: ./compose/django/Dockerfile-dev
-    depends_on:
-      - postgres
-    environment:
-      - POSTGRES_USER=dct
-    volumes:
-      - .:/app
 
 
 
