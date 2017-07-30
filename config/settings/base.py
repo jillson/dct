@@ -45,6 +45,7 @@ DJANGO_APPS = [
     'django.contrib.admin',
 ]
 THIRD_PARTY_APPS = [
+    'channels', # Django Channels
     'crispy_forms',  # Form layouts
     'allauth',  # registration
     'allauth.account',  # registration
@@ -55,7 +56,7 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     # custom users app
     'dct.users.apps.UsersConfig',
-    # Your stuff: custom apps go here
+    'cards',
 ]
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
@@ -271,3 +272,15 @@ ADMIN_URL = r'^admin/'
 
 # Your common stuff: Below this line define 3rd party library settings
 # ------------------------------------------------------------------------------
+
+#TODO: override in prod to use non memory backend?
+CHANNEL_LAYERS = {
+  "default": {
+      "BACKEND": "asgiref.inmemory.ChannelLayer",
+      "ROUTING": "cards.routing.channel_routing",
+    },
+}
+
+
+
+
