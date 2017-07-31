@@ -110,7 +110,15 @@ MANAGERS = ADMINS
 # ------------------------------------------------------------------------------
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#databases
 DATABASES = {
-    'default': env.db('DATABASE_URL', default='postgres:///dct'),
+    #'default': env.db('DATABASE_URL', default='postgres:///dct'),
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'dct',
+        'USER': 'dct',
+        'HOST': 'postgres',
+        'PORT': '5432',
+    }
+    
 }
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 

@@ -6,6 +6,11 @@ Test settings
 
 from .base import *  # noqa
 
+# Database
+# set DB to sqlite (which will be in memory)
+# not sure why cookie cutter doesn't do this by default
+DATABASES['default'] = {'ENGINE': 'django.db.backends.sqlite3'}
+
 
 # DEBUG
 # ------------------------------------------------------------------------------
