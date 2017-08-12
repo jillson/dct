@@ -50,3 +50,4 @@ channels>=1.0
 
 
 # Your custom requirements go here
+djangorestframework>=3.6.3

@@ -5,6 +5,16 @@ from django.contrib import admin
 from django.views.generic import TemplateView
 from django.views import defaults as default_views
 
+from rest_framework import routers
+
+from cards.views import GameViewSet,GameInstanceViewSet
+
+
+# DRF Stuff
+router = routers.DefaultRouter()
+router.register(r'games', GameViewSet)
+router.register(r'gameInstances', GameInstanceViewSet)
+
 urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name='home'),
     url(r'^about/$', TemplateView.as_view(template_name='pages/about.html'), name='about'),
@@ -16,6 +26,9 @@ urlpatterns = [
     url(r'^users/', include('dct.users.urls', namespace='users')),
     url(r'^accounts/', include('allauth.urls')),
 
+    # DRF stuff (I really don't like how this seems to work from a separation thing)
+    url(r'^api/', include(router.urls)),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
     # Your stuff: custom urls includes go here
 
 
