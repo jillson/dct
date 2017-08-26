@@ -1,32 +1,59 @@
-
-//TODO: mvoe websocket stuff into main (same for the other functions?)
-
-// Note that the path doesn't matter for routing; any WebSocket
-// connection gets bumped over to WebSocket consumers
-socket = new WebSocket("ws://" + window.location.host + "/chat/");
-socket.onmessage = function(e) {
-    alert(e.data);
-}
-socket.onopen = function() {
-    socket.send("hello world");
-}
-// Call onopen directly if socket is already open
-if (socket.readyState == WebSocket.OPEN) socket.onopen();
-
-function handleDragStart(e) {
-    //$(this).css({"opacity":0.4}); //,"left":"","top":""});
-}
-
-function handleDragStop(e) {
-    //$(this).css({"opacity":""});//,"left":"","top":""});
-}
-
-
 var main = function()
 {
     var gamestate = {};
-    $.get("/api/game/1.json",{dataType:"json"}).success(function(data) { setupLayout(data)});
+    console.log("Userid is" + uid);
 
+    function createChatWindow()
+    {
+	var $div = $("#content");
+	$div.html('<input type="textarea" id="chat" name="chat"><input type="button" id="sendMessage" value="send"><br><div id="chattext">&nbsp;</div><br>');
+	$("#sendMessage").click(function() {
+	    var text = $("#chat").val();
+	    console.log("Debug" + text);
+	    $("#chat").val(''); //clear text typed
+	    chatSocket.send(text);
+	    return false;
+	});
+    }
+    createChatWindow();
+
+    function createSocket(path,onmessage,onopen)
+    {
+	var socket = new WebSocket("ws://" + window.location.host + path);
+	socket.onmessage = onmessage;
+	socket.onopen = onopen;
+	// Call onopen directly if socket is already open
+	if (socket.readyState == WebSocket.OPEN) socket.onopen();
+	return socket;
+    }
+
+    var chatSocket = createSocket("/chat/",
+				  function(e) {
+				      $("#chattext").append("<p>"+e.data+"</p>")
+				      if (e.data === "your mom")
+				      {
+					  $.get("/api/gameinstance/1",{dataType:"json"}).success(function(data) { setupLayout(data)});
+				      }
+				  }, function() {
+				      chatSocket.send(username + " joined the chat");
+				  });
+    function handleStatus(e) {
+	$("#chattext").append("<i>"+e.data+"</i>");
+    }
+
+    
+    var statusSocket = createSocket("/user/"+uid,handleStatus,function(){});
+
+    
+    function handleDragStart(e) {
+	//$(this).css({"opacity":0.4}); //,"left":"","top":""});
+    }
+
+    function handleDragStop(e) {
+	//$(this).css({"opacity":""});//,"left":"","top":""});
+    }
+
+   
     function makeCard(card,$target)
     {
 	var $div;
@@ -61,7 +88,13 @@ var main = function()
 	    }
 	}
 
-
+	$('.cardFaceDiv').each(function(index) {
+	    $(this).draggable({start: handleDragStart, stop: handleDragStop});
+	});
+	
+	$('.cardBackDiv').each(function(index) {
+	    $(this).draggable({start: handleDragStart, stop: handleDragStop});
+	});
     }
     
     function setupLayout(data)
@@ -137,20 +170,16 @@ var main = function()
 	    }
 
 	}
-    $.get("/api/gameinstance/1.json",{dataType:"json"}).success(function(data) { setupDeck(data)});
+	$.get("/api/gameinstance/1.json",{dataType:"json"}).success(function(data) { setupDeck(data)});
+	
+
     }
     return({"state":gamestate});
 }();
          
 
 
-$('.cardFaceDiv').each(function(index) {
-    $(this).draggable({start: handleDragStart, stop: handleDragStop});
-});
 
-$('.cardBackDiv').each(function(index) {
-    $(this).draggable({start: handleDragStart, stop: handleDragStop});
-});
 
 
 
