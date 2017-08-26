@@ -1,8 +1,8 @@
 
 
 from rest_framework import viewsets
-from .serializers import GameSerializer, GameInstanceSerializer
-from .models import Game, GameInstance
+from .serializers import GameSerializer, GameInstanceSerializer, InvitationSerializer
+from .models import Game, GameInstance, Invitation
 
 class GameViewSet(viewsets.ModelViewSet):
     """
@@ -17,3 +17,7 @@ class GameInstanceViewSet(viewsets.ModelViewSet):
     """
     queryset = GameInstance.objects.all()
     serializer_class = GameInstanceSerializer
+
+class InvitationViewSet(viewsets.ModelViewSet):
+    queryset = Invitation.objects.all()
+    serializer_class = InvitationSerializer
