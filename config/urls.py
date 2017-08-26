@@ -7,13 +7,14 @@ from django.views import defaults as default_views
 
 from rest_framework import routers
 
-from cards.views import GameViewSet,GameInstanceViewSet
+from cards.views import GameViewSet,GameInstanceViewSet, InvitationViewSet
 
 
 # DRF Stuff
 router = routers.DefaultRouter()
 router.register(r'games', GameViewSet)
 router.register(r'gameInstances', GameInstanceViewSet)
+router.register(r'invitations',InvitationViewSet)
 
 urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name='home'),
@@ -28,9 +29,9 @@ urlpatterns = [
 
     # DRF stuff (I really don't like how this seems to work from a separation thing)
     url(r'^api/', include(router.urls)),
-    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     # Your stuff: custom urls includes go here
-
+    #url(r'^cards/', include('cards.urls')),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
