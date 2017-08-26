@@ -286,7 +286,11 @@ ADMIN_URL = r'^admin/'
 #TODO: override in prod to use non memory backend?
 CHANNEL_LAYERS = {
   "default": {
-      "BACKEND": "asgiref.inmemory.ChannelLayer",
+      #"BACKEND": "asgiref.inmemory.ChannelLayer",
+      "BACKEND": "asgi_redis.RedisChannelLayer",
+      "CONFIG": {
+      "hosts": [("redis", 6379)],
+      },
       "ROUTING": "cards.routing.channel_routing",
     },
 }
