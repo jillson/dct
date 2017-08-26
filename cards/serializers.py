@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from .models import Game, GameInstance, Row, Spot, Deck, Card
+from .models import Game, GameInstance, Row, Spot, Deck, Card, Invitation
 
 class CardSerializer(serializers.ModelSerializer):
      class Meta:
@@ -12,8 +12,6 @@ class DeckSerializer(serializers.ModelSerializer):
      class Meta:
           model = Deck
           fields = '__all__'
-
-
           
 class SpotSerializer(serializers.HyperlinkedModelSerializer):
      Deck = DeckSerializer()
@@ -41,3 +39,15 @@ class GameInstanceSerializer(serializers.ModelSerializer):
      class Meta:
          model = GameInstance
          fields = ('Game','url')
+
+class InvitationSerializer(serializers.ModelSerializer):
+     class Meta:
+          model = Invitation
+          fields = "__all__"
+     def create(self, request):
+          i = Invitation.objects.create(GameInstance=request.get("GameInstance"),
+                                        Target=request.get("Target"))
+          i.save()
+          return i
+     
+          
