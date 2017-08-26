@@ -1,0 +1,1100 @@
+[
+  {
+    "fields": {
+      "Name": "Spades"
+    },
+    "model": "cards.tag"
+  },
+  {
+    "fields": {
+      "Name": "Hearts"
+    },
+    "model": "cards.tag"
+  },
+  {
+    "fields": {
+      "Name": "Clubs"
+    },
+    "model": "cards.tag"
+  },
+  {
+    "fields": {
+      "Name": "Diamonds"
+    },
+    "model": "cards.tag"
+  },
+  {
+    "fields": {
+      "Name": "Ace"
+    },
+    "model": "cards.tag"
+  },
+  {
+    "fields": {
+      "Name": "Two"
+    },
+    "model": "cards.tag"
+  },
+  {
+    "fields": {
+      "Name": "Three"
+    },
+    "model": "cards.tag"
+  },
+  {
+    "fields": {
+      "Name": "Four"
+    },
+    "model": "cards.tag"
+  },
+  {
+    "fields": {
+      "Name": "Five"
+    },
+    "model": "cards.tag"
+  },
+  {
+    "fields": {
+      "Name": "Six"
+    },
+    "model": "cards.tag"
+  },
+  {
+    "fields": {
+      "Name": "Seven"
+    },
+    "model": "cards.tag"
+  },
+  {
+    "fields": {
+      "Name": "Eight"
+    },
+    "model": "cards.tag"
+  },
+  {
+    "fields": {
+      "Name": "Nine"
+    },
+    "model": "cards.tag"
+  },
+  {
+    "fields": {
+      "Name": "Ten"
+    },
+    "model": "cards.tag"
+  },
+  {
+    "fields": {
+      "Name": "Jack"
+    },
+    "model": "cards.tag"
+  },
+  {
+    "fields": {
+      "Name": "Queen"
+    },
+    "model": "cards.tag"
+  },
+  {
+    "fields": {
+      "Name": "King"
+    },
+    "model": "cards.tag"
+  },
+  {
+    "fields": {
+      "Name": "Ace of Spades",
+      "Tags": [
+        [
+          "Ace"
+        ],
+        [
+          "Spades"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Two of Spades",
+      "Tags": [
+        [
+          "Two"
+        ],
+        [
+          "Spades"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Three of Spades",
+      "Tags": [
+        [
+          "Three"
+        ],
+        [
+          "Spades"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Four of Spades",
+      "Tags": [
+        [
+          "Four"
+        ],
+        [
+          "Spades"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Five of Spades",
+      "Tags": [
+        [
+          "Five"
+        ],
+        [
+          "Spades"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Six of Spades",
+      "Tags": [
+        [
+          "Six"
+        ],
+        [
+          "Spades"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Seven of Spades",
+      "Tags": [
+        [
+          "Seven"
+        ],
+        [
+          "Spades"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Eight of Spades",
+      "Tags": [
+        [
+          "Eight"
+        ],
+        [
+          "Spades"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Nine of Spades",
+      "Tags": [
+        [
+          "Nine"
+        ],
+        [
+          "Spades"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Ten of Spades",
+      "Tags": [
+        [
+          "Ten"
+        ],
+        [
+          "Spades"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Jack of Spades",
+      "Tags": [
+        [
+          "Jack"
+        ],
+        [
+          "Spades"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Queen of Spades",
+      "Tags": [
+        [
+          "Queen"
+        ],
+        [
+          "Spades"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "King of Spades",
+      "Tags": [
+        [
+          "King"
+        ],
+        [
+          "Spades"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Ace of Hearts",
+      "Tags": [
+        [
+          "Ace"
+        ],
+        [
+          "Hearts"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Two of Hearts",
+      "Tags": [
+        [
+          "Two"
+        ],
+        [
+          "Hearts"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Three of Hearts",
+      "Tags": [
+        [
+          "Three"
+        ],
+        [
+          "Hearts"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Four of Hearts",
+      "Tags": [
+        [
+          "Four"
+        ],
+        [
+          "Hearts"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Five of Hearts",
+      "Tags": [
+        [
+          "Five"
+        ],
+        [
+          "Hearts"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Six of Hearts",
+      "Tags": [
+        [
+          "Six"
+        ],
+        [
+          "Hearts"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Seven of Hearts",
+      "Tags": [
+        [
+          "Seven"
+        ],
+        [
+          "Hearts"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Eight of Hearts",
+      "Tags": [
+        [
+          "Eight"
+        ],
+        [
+          "Hearts"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Nine of Hearts",
+      "Tags": [
+        [
+          "Nine"
+        ],
+        [
+          "Hearts"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Ten of Hearts",
+      "Tags": [
+        [
+          "Ten"
+        ],
+        [
+          "Hearts"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Jack of Hearts",
+      "Tags": [
+        [
+          "Jack"
+        ],
+        [
+          "Hearts"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Queen of Hearts",
+      "Tags": [
+        [
+          "Queen"
+        ],
+        [
+          "Hearts"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "King of Hearts",
+      "Tags": [
+        [
+          "King"
+        ],
+        [
+          "Hearts"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Ace of Clubs",
+      "Tags": [
+        [
+          "Ace"
+        ],
+        [
+          "Clubs"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Two of Clubs",
+      "Tags": [
+        [
+          "Two"
+        ],
+        [
+          "Clubs"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Three of Clubs",
+      "Tags": [
+        [
+          "Three"
+        ],
+        [
+          "Clubs"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Four of Clubs",
+      "Tags": [
+        [
+          "Four"
+        ],
+        [
+          "Clubs"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Five of Clubs",
+      "Tags": [
+        [
+          "Five"
+        ],
+        [
+          "Clubs"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Six of Clubs",
+      "Tags": [
+        [
+          "Six"
+        ],
+        [
+          "Clubs"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Seven of Clubs",
+      "Tags": [
+        [
+          "Seven"
+        ],
+        [
+          "Clubs"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Eight of Clubs",
+      "Tags": [
+        [
+          "Eight"
+        ],
+        [
+          "Clubs"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Nine of Clubs",
+      "Tags": [
+        [
+          "Nine"
+        ],
+        [
+          "Clubs"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Ten of Clubs",
+      "Tags": [
+        [
+          "Ten"
+        ],
+        [
+          "Clubs"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Jack of Clubs",
+      "Tags": [
+        [
+          "Jack"
+        ],
+        [
+          "Clubs"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Queen of Clubs",
+      "Tags": [
+        [
+          "Queen"
+        ],
+        [
+          "Clubs"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "King of Clubs",
+      "Tags": [
+        [
+          "King"
+        ],
+        [
+          "Clubs"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Ace of Diamonds",
+      "Tags": [
+        [
+          "Ace"
+        ],
+        [
+          "Diamonds"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Two of Diamonds",
+      "Tags": [
+        [
+          "Two"
+        ],
+        [
+          "Diamonds"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Three of Diamonds",
+      "Tags": [
+        [
+          "Three"
+        ],
+        [
+          "Diamonds"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Four of Diamonds",
+      "Tags": [
+        [
+          "Four"
+        ],
+        [
+          "Diamonds"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Five of Diamonds",
+      "Tags": [
+        [
+          "Five"
+        ],
+        [
+          "Diamonds"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Six of Diamonds",
+      "Tags": [
+        [
+          "Six"
+        ],
+        [
+          "Diamonds"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Seven of Diamonds",
+      "Tags": [
+        [
+          "Seven"
+        ],
+        [
+          "Diamonds"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Eight of Diamonds",
+      "Tags": [
+        [
+          "Eight"
+        ],
+        [
+          "Diamonds"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Nine of Diamonds",
+      "Tags": [
+        [
+          "Nine"
+        ],
+        [
+          "Diamonds"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Ten of Diamonds",
+      "Tags": [
+        [
+          "Ten"
+        ],
+        [
+          "Diamonds"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Jack of Diamonds",
+      "Tags": [
+        [
+          "Jack"
+        ],
+        [
+          "Diamonds"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Queen of Diamonds",
+      "Tags": [
+        [
+          "Queen"
+        ],
+        [
+          "Diamonds"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "King of Diamonds",
+      "Tags": [
+        [
+          "King"
+        ],
+        [
+          "Diamonds"
+        ]
+      ]
+    },
+    "model": "cards.card"
+  },
+  {
+    "fields": {
+      "Name": "Poker Deck",
+      "Cards": [
+        [
+          "Ace of Spades"
+        ],
+        [
+          "Two of Spades"
+        ],
+        [
+          "Three of Spades"
+        ],
+        [
+          "Four of Spades"
+        ],
+        [
+          "Five of Spades"
+        ],
+        [
+          "Six of Spades"
+        ],
+        [
+          "Seven of Spades"
+        ],
+        [
+          "Eight of Spades"
+        ],
+        [
+          "Nine of Spades"
+        ],
+        [
+          "Ten of Spades"
+        ],
+        [
+          "Jack of Spades"
+        ],
+        [
+          "Queen of Spades"
+        ],
+        [
+          "King of Spades"
+        ],
+        [
+          "Ace of Hearts"
+        ],
+        [
+          "Two of Hearts"
+        ],
+        [
+          "Three of Hearts"
+        ],
+        [
+          "Four of Hearts"
+        ],
+        [
+          "Five of Hearts"
+        ],
+        [
+          "Six of Hearts"
+        ],
+        [
+          "Seven of Hearts"
+        ],
+        [
+          "Eight of Hearts"
+        ],
+        [
+          "Nine of Hearts"
+        ],
+        [
+          "Ten of Hearts"
+        ],
+        [
+          "Jack of Hearts"
+        ],
+        [
+          "Queen of Hearts"
+        ],
+        [
+          "King of Hearts"
+        ],
+        [
+          "Ace of Clubs"
+        ],
+        [
+          "Two of Clubs"
+        ],
+        [
+          "Three of Clubs"
+        ],
+        [
+          "Four of Clubs"
+        ],
+        [
+          "Five of Clubs"
+        ],
+        [
+          "Six of Clubs"
+        ],
+        [
+          "Seven of Clubs"
+        ],
+        [
+          "Eight of Clubs"
+        ],
+        [
+          "Nine of Clubs"
+        ],
+        [
+          "Ten of Clubs"
+        ],
+        [
+          "Jack of Clubs"
+        ],
+        [
+          "Queen of Clubs"
+        ],
+        [
+          "King of Clubs"
+        ],
+        [
+          "Ace of Diamonds"
+        ],
+        [
+          "Two of Diamonds"
+        ],
+        [
+          "Three of Diamonds"
+        ],
+        [
+          "Four of Diamonds"
+        ],
+        [
+          "Five of Diamonds"
+        ],
+        [
+          "Six of Diamonds"
+        ],
+        [
+          "Seven of Diamonds"
+        ],
+        [
+          "Eight of Diamonds"
+        ],
+        [
+          "Nine of Diamonds"
+        ],
+        [
+          "Ten of Diamonds"
+        ],
+        [
+          "Jack of Diamonds"
+        ],
+        [
+          "Queen of Diamonds"
+        ],
+        [
+          "King of Diamonds"
+        ]
+      ]
+    },
+    "model": "cards.deck"
+  },
+  {
+    "fields": {
+      "Name": "all",
+      "Description": ""
+    },
+    "model": "cards.visibility"
+  },
+  {
+    "fields": {
+      "Name": "flip",
+      "Description": ""
+    },
+    "model": "cards.visibility"
+  },
+  {
+    "fields": {
+      "Name": "player1",
+      "Description": ""
+    },
+    "model": "cards.visibility"
+  },
+  {
+    "fields": {
+      "Name": "player2",
+      "Description": ""
+    },
+    "model": "cards.visibility"
+  },
+  {
+    "fields": {
+      "Name": "player3",
+      "Description": ""
+    },
+    "model": "cards.visibility"
+  },
+  {
+    "fields": {
+      "Name": "player4",
+      "Description": ""
+    },
+    "model": "cards.visibility"
+  },
+  {
+    "fields": {
+      "Name": "Common Draw",
+      "Deck": [
+        "Poker Deck"
+      ]
+    },
+    "model": "cards.spot"
+  },
+  {
+    "fields": {
+      "Name": "Player1 Draw",
+      "Drop": true
+    },
+    "model": "cards.spot"
+  },
+  {
+    "fields": {
+      "Name": "Player2 Draw",
+      "Drop": true
+    },
+    "model": "cards.spot"
+  },
+  {
+    "fields": {
+      "Visibility": [
+        "player1"
+      ],
+      "Spots": [
+        ["Player1 Draw"]
+      ],
+      "Name": "War Player1 Row",
+      "NewRow": false
+    },
+    "model": "cards.row"
+  },
+  {
+    "fields": {
+      "Visibility": [
+        "player2"
+      ],
+      "Spots": [
+        ["Player2 Draw"]
+      ],
+      "Name": "War Player2 Row",
+      "NewRow": false
+    },
+    "model": "cards.row"
+  },
+  {
+    "fields": {
+      "Visibility": [
+        "flip"
+      ],
+      "Spots": [
+        ["Common Draw"]
+      ],
+      "Name": "War Middle Row",
+      "NewRow": false
+    },
+    "model": "cards.row"
+  }
+]

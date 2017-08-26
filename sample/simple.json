@@ -1,0 +1,83 @@
+[
+{
+  "model": "cards.tag",
+  "fields": {
+    "Name": "Ace"
+  }
+},
+{
+  "model": "cards.tag",
+  "fields": {
+    "Name": "Spade"
+  }
+},
+{
+  "model": "cards.card",
+  "fields": {
+    "Name": "Ace of Spades",
+    "Tags": [
+      [
+        "Ace"
+      ],
+      [
+        "Spade"
+      ]
+    ]
+  }
+},
+{
+  "model": "cards.deck",
+  "fields": {
+    "Name": "Poker Deck",
+    "Cards": [
+      [
+        "Ace of Spades"
+      ]
+    ]
+  }
+},
+{
+  "model": "cards.spot",
+  "fields": {
+    "Name": "Player1 Draw",
+    "Drop": true,
+    "Deck": [
+      "Poker Deck"
+    ]
+  }
+},
+{
+  "model": "cards.visibility",
+  "fields": {
+    "Name": "PlayerOnly",
+    "Description": ""
+  }
+},
+{
+  "model": "cards.row",
+  "fields": {
+    "Name": "Player1",
+    "NewRow": false,
+    "Width": -1,
+    "Visibility": [
+      "PlayerOnly"
+    ],
+    "Spots": [
+      [
+        "Player1 Draw"
+      ]
+    ]
+  }
+},
+{
+  "model": "cards.game",
+  "fields": {
+    "Name": "War",
+    "Rows": [
+      [
+        "Player1"
+      ]
+    ]
+  }
+}
+]
