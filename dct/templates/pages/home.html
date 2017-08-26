@@ -1,6 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div id="base">stuff goes here</div>
-<br style="clear: both;">
+{% if user.is_authenticated %}
+Greetings {{user}}.
+<script>
+  var uid = {{user.id}};
+  var username = "{{user}}";
+</script>
+<div id="content">
+  Page loading...
+</div>
+{% else %}
+Please sign in to create games, invite friends, and crush them.
+{% endif %}
+
+
 {% endblock %}
