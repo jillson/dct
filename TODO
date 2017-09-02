@@ -1,0 +1,17 @@
+TODO:
+  Update code so private channel includes game instances
+  Add code so private channel stuff creates links to do stuff
+  Maybe todo: modify gameinstance so it returns game as well
+  Add shuffle option to client (implement javascript shuffle or do it via python api?)
+
+Longer Term:
+
+Invite user logic
+Permissions
+Front end adjustments
+
+Channel Increase
+Send updates to backend
+Sync updates to other channel consumers
+
+Game Editor
